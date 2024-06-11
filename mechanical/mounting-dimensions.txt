@@ -1,0 +1,19 @@
+Dimensioner til huller:
+
+(1) Rotary Switch: 11mm
+
+(2) Frequency Pot: 7.5mm
+
+(3) Resonans Pot: 7.5mm
+
+(4) Volume Pot: 11mm
+
+
+
+Layout - ift. metalpladen
+
+(1) (2) (3) (4)
+
+(1) (2) (3) (4)
+
+(1) (2) (3) (4)

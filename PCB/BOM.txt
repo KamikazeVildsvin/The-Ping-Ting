@@ -1,0 +1,14 @@
+BOM - The Ping Ting
+
+
+LM342 [4x rail-to-rail opamps]
+
+LM358 [2x rail-to-rail opamps]
+
+Dual 100kOhm log potentiometer
+
+resistors
+
+film/ceramic caps
+
+1P3T switches (Banzei mangler en)
