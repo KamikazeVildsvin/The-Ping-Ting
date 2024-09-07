@@ -9,8 +9,9 @@
 	(paper "A4")
 	(title_block
 		(title "The Ping Ting")
-		(date "2024-06-11")
-		(rev "1.1")
+		(date "2024-09-07")
+		(rev "1.2")
+		(company "Kromftrnoics")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -94,66 +95,66 @@
 	(net 16 "/filter2/filter2In")
 	(net 17 "/filter3/HP3")
 	(net 18 "/filter3/filter3In")
-	(net 19 "Net-(C101-Pad2)")
-	(net 20 "Net-(C102-Pad2)")
+	(net 19 "Net-(D101-K)")
+	(net 20 "Net-(U101A-+)")
 	(net 21 "Net-(C102-Pad1)")
 	(net 22 "Net-(C103-Pad1)")
 	(net 23 "Net-(C103-Pad2)")
-	(net 24 "Net-(C105-Pad2)")
+	(net 24 "Net-(D103-K)")
 	(net 25 "Net-(C106-Pad1)")
-	(net 26 "Net-(C106-Pad2)")
+	(net 26 "Net-(U102A-+)")
 	(net 27 "Net-(C107-Pad2)")
 	(net 28 "Net-(C107-Pad1)")
-	(net 29 "Net-(C109-Pad2)")
+	(net 29 "Net-(D105-K)")
 	(net 30 "Net-(C110-Pad1)")
-	(net 31 "Net-(C110-Pad2)")
+	(net 31 "Net-(U103A-+)")
 	(net 32 "Net-(C111-Pad2)")
 	(net 33 "Net-(C111-Pad1)")
-	(net 34 "Net-(C201-Pad2)")
-	(net 35 "Net-(C202-Pad2)")
-	(net 36 "Net-(C301-Pad2)")
-	(net 37 "Net-(C302-Pad2)")
-	(net 38 "Net-(C401-Pad2)")
-	(net 39 "Net-(C402-Pad2)")
+	(net 34 "Net-(U104C--)")
+	(net 35 "Net-(U104B--)")
+	(net 36 "Net-(U105C--)")
+	(net 37 "Net-(U105B--)")
+	(net 38 "Net-(U106C--)")
+	(net 39 "Net-(U106B--)")
 	(net 40 "Net-(J102-PadT)")
 	(net 41 "Net-(J104-PadT)")
 	(net 42 "Net-(J107-PadT)")
-	(net 43 "Net-(R101-Pad1)")
+	(net 43 "Net-(U101B--)")
 	(net 44 "Net-(R102-Pad1)")
-	(net 45 "Net-(R109-Pad1)")
+	(net 45 "Net-(U102B--)")
 	(net 46 "Net-(R110-Pad1)")
-	(net 47 "Net-(R117-Pad1)")
+	(net 47 "Net-(U103B--)")
 	(net 48 "Net-(R118-Pad1)")
-	(net 49 "Net-(R201-Pad1)")
+	(net 49 "Net-(U104A--)")
 	(net 50 "Net-(R203-Pad1)")
 	(net 51 "Net-(R205-Pad1)")
-	(net 52 "Net-(R206-Pad2)")
-	(net 53 "Net-(R207-Pad2)")
-	(net 54 "Net-(R208-Pad2)")
+	(net 52 "Net-(U104A-+)")
+	(net 53 "Net-(U104B-+)")
+	(net 54 "Net-(U104C-+)")
 	(net 55 "Net-(R209-Pad2)")
 	(net 56 "Net-(R210-Pad2)")
-	(net 57 "Net-(R211-Pad1)")
-	(net 58 "Net-(R212-Pad2)")
-	(net 59 "Net-(R301-Pad1)")
+	(net 57 "Net-(U104D--)")
+	(net 58 "Net-(U104D-+)")
+	(net 59 "Net-(U105A--)")
 	(net 60 "Net-(R303-Pad1)")
 	(net 61 "Net-(R305-Pad1)")
-	(net 62 "Net-(R306-Pad2)")
-	(net 63 "Net-(R307-Pad2)")
-	(net 64 "Net-(R308-Pad2)")
+	(net 62 "Net-(U105A-+)")
+	(net 63 "Net-(U105B-+)")
+	(net 64 "Net-(U105C-+)")
 	(net 65 "Net-(R309-Pad2)")
 	(net 66 "Net-(R310-Pad2)")
-	(net 67 "Net-(R311-Pad1)")
-	(net 68 "Net-(R312-Pad2)")
-	(net 69 "Net-(R401-Pad1)")
+	(net 67 "Net-(U105D--)")
+	(net 68 "Net-(U105D-+)")
+	(net 69 "Net-(U106A--)")
 	(net 70 "Net-(R403-Pad1)")
 	(net 71 "Net-(R405-Pad1)")
-	(net 72 "Net-(R406-Pad2)")
-	(net 73 "Net-(R407-Pad2)")
-	(net 74 "Net-(R408-Pad2)")
+	(net 72 "Net-(U106A-+)")
+	(net 73 "Net-(U106B-+)")
+	(net 74 "Net-(U106C-+)")
 	(net 75 "Net-(R409-Pad2)")
 	(net 76 "Net-(R410-Pad2)")
-	(net 77 "Net-(R411-Pad1)")
-	(net 78 "Net-(R412-Pad2)")
+	(net 77 "Net-(U106D--)")
+	(net 78 "Net-(U106D-+)")
 	(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000060ff089f")
@@ -182,7 +183,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -221,7 +222,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/00000000-0000-0000-0000-000060933dff")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1708,7 +1711,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1747,7 +1750,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/00000000-0000-0000-0000-00006131c660")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3234,7 +3239,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3273,7 +3278,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000612569ce")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3487,7 +3494,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3526,7 +3533,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060901f46")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3740,7 +3749,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3779,7 +3788,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00006132f5a1")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3993,7 +4004,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4032,7 +4043,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060700a99")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4246,7 +4259,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4285,7 +4298,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060869c06")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4499,7 +4514,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4538,7 +4553,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000608e6bf2")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4752,7 +4769,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4791,6 +4808,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0da2")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -4942,7 +4960,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 34 "Net-(C201-Pad2)")
+			(net 34 "Net-(U104C--)")
 			(pintype "passive")
 			(uuid "6e89e67c-60a8-45cd-b86e-7d44b736caa1")
 		)
@@ -4986,7 +5004,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5025,6 +5043,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0d9c")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -5176,7 +5195,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 35 "Net-(C202-Pad2)")
+			(net 35 "Net-(U104B--)")
 			(pintype "passive")
 			(uuid "6567b21d-e315-4b9c-a3ec-10aa6b360943")
 		)
@@ -5220,7 +5239,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5259,6 +5278,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061260962")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -5410,7 +5430,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 36 "Net-(C301-Pad2)")
+			(net 36 "Net-(U105C--)")
 			(pintype "passive")
 			(uuid "8b412c8d-17b8-4f6f-a307-75987c176db5")
 		)
@@ -5454,7 +5474,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5493,6 +5513,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061260961")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -5644,7 +5665,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 37 "Net-(C302-Pad2)")
+			(net 37 "Net-(U105B--)")
 			(pintype "passive")
 			(uuid "579c92b9-d2e8-40ce-a151-30112d3edc83")
 		)
@@ -5688,7 +5709,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W8.5mm_P5.00mm_FKP2_FKP2_MKS2_MKP2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5727,6 +5748,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2bdf")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -5878,7 +5900,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 38 "Net-(C401-Pad2)")
+			(net 38 "Net-(U106C--)")
 			(pintype "passive")
 			(uuid "03ae602f-5c4e-472e-b21c-19f1a8f390f9")
 		)
@@ -5922,7 +5944,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W8.5mm_P5.00mm_FKP2_FKP2_MKS2_MKP2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5961,6 +5983,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2bd9")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -6112,7 +6135,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 39 "Net-(C402-Pad2)")
+			(net 39 "Net-(U106B--)")
 			(pintype "passive")
 			(uuid "d54a9fec-5328-400b-a4bd-6a7828ad0f9e")
 		)
@@ -6156,7 +6179,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6169,7 +6192,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6195,7 +6218,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/00000000-0000-0000-0000-0000610d43be")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6457,7 +6482,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(C101-Pad2)")
+			(net 19 "Net-(D101-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "fb02e7b3-bdd6-4b78-b157-c5d8de81fb49")
@@ -6513,7 +6538,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6526,7 +6551,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6552,7 +6577,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/00000000-0000-0000-0000-0000610f7939")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6825,7 +6852,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(C101-Pad2)")
+			(net 19 "Net-(D101-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "6376f375-0496-40a7-8f72-767542d55273")
@@ -6870,7 +6897,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6883,7 +6910,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6909,7 +6936,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/00000000-0000-0000-0000-0000611cd97e")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7171,7 +7200,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "Net-(C105-Pad2)")
+			(net 24 "Net-(D103-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "bf169ff6-8972-4996-8ff6-3b503fb71cba")
@@ -7227,7 +7256,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7240,7 +7269,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7266,7 +7295,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/00000000-0000-0000-0000-0000611cd988")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7539,7 +7570,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "Net-(C105-Pad2)")
+			(net 24 "Net-(D103-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "7e3baed5-42f9-4199-b034-309fd9d9e1e0")
@@ -7584,7 +7615,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7597,7 +7628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7623,7 +7654,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/00000000-0000-0000-0000-00006121ece6")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7885,7 +7918,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 29 "Net-(C109-Pad2)")
+			(net 29 "Net-(D105-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "4dbe22dd-3149-4c4a-8794-17011ab5559d")
@@ -7941,7 +7974,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7954,7 +7987,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7980,7 +8013,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/00000000-0000-0000-0000-00006121ecf0")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8253,7 +8288,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 29 "Net-(C109-Pad2)")
+			(net 29 "Net-(D105-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "dd1af618-4d06-4a0f-94a5-542397ae110e")
@@ -8298,7 +8333,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8337,7 +8372,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "BarrelJack*")
 		(path "/00000000-0000-0000-0000-0000612c6e1f")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8702,7 +8739,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8741,7 +8778,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060f9f021")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8931,7 +8970,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(C102-Pad2)")
+			(net 20 "Net-(U101A-+)")
 			(pintype "passive")
 			(uuid "74d9214d-a77a-4e03-84ca-232a766c07fe")
 		)
@@ -8975,7 +9014,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9014,7 +9053,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006099d23a")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9248,7 +9289,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9287,7 +9328,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000610c2bd9")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9467,7 +9510,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(C101-Pad2)")
+			(net 19 "Net-(D101-K)")
 			(pintype "passive")
 			(uuid "f7be521d-a622-4598-ac9b-ab54e03e1f96")
 		)
@@ -9521,7 +9564,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9560,7 +9603,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006092a6d0")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9740,7 +9785,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(C102-Pad2)")
+			(net 20 "Net-(U101A-+)")
 			(pintype "passive")
 			(uuid "8388cc03-76af-4618-9ca1-e0d8fbb403b6")
 		)
@@ -9794,7 +9839,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9833,7 +9878,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060fdfd4c")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10067,7 +10114,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10106,7 +10153,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006092d6d1")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10340,7 +10389,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10379,7 +10428,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006092dbc3")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10613,7 +10664,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10652,7 +10703,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000611cd91f")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10842,7 +10895,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 26 "Net-(C106-Pad2)")
+			(net 26 "Net-(U102A-+)")
 			(pintype "passive")
 			(uuid "fbc9f75f-07a5-41c8-851b-81480a965573")
 		)
@@ -10886,7 +10939,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10925,7 +10978,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000611cd9b0")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11159,7 +11214,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11198,7 +11253,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000611cd972")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11378,7 +11435,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "Net-(C105-Pad2)")
+			(net 24 "Net-(D103-K)")
 			(pintype "passive")
 			(uuid "4d92d011-41b7-4b38-8572-1cfcbe14a053")
 		)
@@ -11432,7 +11489,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11471,7 +11528,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000611cd942")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11651,7 +11710,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 26 "Net-(C106-Pad2)")
+			(net 26 "Net-(U102A-+)")
 			(pintype "passive")
 			(uuid "485a5b98-0c95-4772-ba06-927fa80b7464")
 		)
@@ -11705,7 +11764,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11744,7 +11803,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000611cd9bb")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11978,7 +12039,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12017,7 +12078,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006101d218")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12197,7 +12260,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 47 "Net-(R117-Pad1)")
+			(net 47 "Net-(U103B--)")
 			(pintype "passive")
 			(uuid "1d5b010f-7439-4c9b-bb1d-ea6069b4991d")
 		)
@@ -12251,7 +12314,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12290,7 +12353,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006121ed18")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12524,7 +12589,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12563,7 +12628,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006121ecda")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12743,7 +12810,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 29 "Net-(C109-Pad2)")
+			(net 29 "Net-(D105-K)")
 			(pintype "passive")
 			(uuid "f8928688-b03f-40bd-9570-ea48ecb155b6")
 		)
@@ -12797,7 +12864,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12836,7 +12903,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006121ecaa")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13016,7 +13085,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 31 "Net-(C110-Pad2)")
+			(net 31 "Net-(U103A-+)")
 			(pintype "passive")
 			(uuid "7b5e650c-c5b6-46ca-877a-2d2757b2861c")
 		)
@@ -13070,7 +13139,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13109,7 +13178,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006121ed23")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13343,7 +13414,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13382,6 +13453,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0d8b")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -13563,7 +13635,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 49 "Net-(R201-Pad1)")
+			(net 49 "Net-(U104A--)")
 			(pintype "passive")
 			(uuid "51c655fe-d75b-462c-8121-9c95576d10cc")
 		)
@@ -13617,7 +13689,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13656,6 +13728,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0de0")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -13847,7 +13920,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 49 "Net-(R201-Pad1)")
+			(net 49 "Net-(U104A--)")
 			(pintype "passive")
 			(uuid "d200e166-9e1c-4f59-9a29-f1a0c0b949ca")
 		)
@@ -13891,7 +13964,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13930,6 +14003,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0dc8")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -14165,7 +14239,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14204,6 +14278,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0dda")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -14385,7 +14460,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 49 "Net-(R201-Pad1)")
+			(net 49 "Net-(U104A--)")
 			(pintype "passive")
 			(uuid "eb2f2b7b-f398-49e2-a285-5c6344c53c47")
 		)
@@ -14439,7 +14514,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14478,6 +14553,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0de6")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -14713,7 +14789,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14752,6 +14828,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000610a1091")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -14943,7 +15020,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 52 "Net-(R206-Pad2)")
+			(net 52 "Net-(U104A-+)")
 			(pintype "passive")
 			(uuid "eb6a1ce9-00fb-4a48-9f76-3eab08f8aa97")
 		)
@@ -14987,7 +15064,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15026,6 +15103,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000610a18e9")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -15217,7 +15295,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 53 "Net-(R207-Pad2)")
+			(net 53 "Net-(U104B-+)")
 			(pintype "passive")
 			(uuid "1e93d72e-a979-4848-8665-83fd675b79fc")
 		)
@@ -15261,7 +15339,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15300,6 +15378,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000610a1ed3")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -15491,7 +15570,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 54 "Net-(R208-Pad2)")
+			(net 54 "Net-(U104C-+)")
 			(pintype "passive")
 			(uuid "f60f7153-446c-49f3-bc56-cdd4372f139c")
 		)
@@ -15535,7 +15614,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15574,6 +15653,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0d85")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -15755,7 +15835,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 49 "Net-(R201-Pad1)")
+			(net 49 "Net-(U104A--)")
 			(pintype "passive")
 			(uuid "a5cf0c93-2133-4b13-bc22-400c862da284")
 		)
@@ -15798,7 +15878,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "220R"
 			(at 5.15 0.02 0)
 			(layer "F.SilkS")
 			(uuid "6984d8be-9b22-40af-9f80-fd113a3de904")
@@ -15809,7 +15889,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15848,6 +15928,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0d3b")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -16083,7 +16164,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16122,6 +16203,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0d7f")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -16303,7 +16385,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 57 "Net-(R211-Pad1)")
+			(net 57 "Net-(U104D--)")
 			(pintype "passive")
 			(uuid "d2d8f710-5196-416c-a4ab-b065b6f69428")
 		)
@@ -16357,7 +16439,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16396,6 +16478,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000610a39b6")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -16587,7 +16670,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 58 "Net-(R212-Pad2)")
+			(net 58 "Net-(U104D-+)")
 			(pintype "passive")
 			(uuid "18cab004-bdde-48a8-9e34-ee496a294606")
 		)
@@ -16631,7 +16714,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16670,6 +16753,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061260960")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -16851,7 +16935,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 59 "Net-(R301-Pad1)")
+			(net 59 "Net-(U105A--)")
 			(pintype "passive")
 			(uuid "59ae8327-5b87-4e4a-88cf-807d39a023b8")
 		)
@@ -16905,7 +16989,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16944,6 +17028,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-0000608b2c1d")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -17135,7 +17220,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 59 "Net-(R301-Pad1)")
+			(net 59 "Net-(U105A--)")
 			(pintype "passive")
 			(uuid "ce1816a8-bc8f-4a6a-a08a-68bc6c62575b")
 		)
@@ -17179,7 +17264,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17218,6 +17303,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061260965")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -17453,7 +17539,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17492,6 +17578,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061260967")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -17673,7 +17760,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 59 "Net-(R301-Pad1)")
+			(net 59 "Net-(U105A--)")
 			(pintype "passive")
 			(uuid "8abede43-2fc9-419c-a44a-b7e7358fae31")
 		)
@@ -17727,7 +17814,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17766,6 +17853,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-0000608b2c23")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -18001,7 +18089,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18040,6 +18128,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-0000610989e9")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -18231,7 +18320,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 62 "Net-(R306-Pad2)")
+			(net 62 "Net-(U105A-+)")
 			(pintype "passive")
 			(uuid "a3a69799-c4fb-440a-80ee-9ddcb95eb01a")
 		)
@@ -18275,7 +18364,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18314,6 +18403,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061093d86")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -18505,7 +18595,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 63 "Net-(R307-Pad2)")
+			(net 63 "Net-(U105B-+)")
 			(pintype "passive")
 			(uuid "1517e415-9d9a-4883-b09c-49ab4a745f11")
 		)
@@ -18549,7 +18639,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18588,6 +18678,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-00006109623a")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -18779,7 +18870,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 64 "Net-(R308-Pad2)")
+			(net 64 "Net-(U105C-+)")
 			(pintype "passive")
 			(uuid "62adf5d2-fed7-4e04-aa38-f9c26e9b76b2")
 		)
@@ -18823,7 +18914,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18862,6 +18953,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-00006126095f")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -19043,7 +19135,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 59 "Net-(R301-Pad1)")
+			(net 59 "Net-(U105A--)")
 			(pintype "passive")
 			(uuid "55648a98-c107-4d56-899d-a72b721a80bb")
 		)
@@ -19086,7 +19178,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "220R"
 			(at 5.25 0 0)
 			(layer "F.SilkS")
 			(uuid "ba0a82a7-94db-4b0b-9c14-7dfdef3ee8a0")
@@ -19097,7 +19189,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19136,6 +19228,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-00006126095d")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -19371,7 +19464,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19410,6 +19503,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-00006126095e")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -19591,7 +19685,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 67 "Net-(R311-Pad1)")
+			(net 67 "Net-(U105D--)")
 			(pintype "passive")
 			(uuid "538e90a8-1482-4800-b89f-804877647ce1")
 		)
@@ -19645,7 +19739,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19684,6 +19778,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-00006109a736")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -19875,7 +19970,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 68 "Net-(R312-Pad2)")
+			(net 68 "Net-(U105D-+)")
 			(pintype "passive")
 			(uuid "18fbcfd3-29ce-4c46-90da-0fa0834ae1f6")
 		)
@@ -19919,7 +20014,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19958,6 +20053,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2bc8")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -20139,7 +20235,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 69 "Net-(R401-Pad1)")
+			(net 69 "Net-(U106A--)")
 			(pintype "passive")
 			(uuid "828b45b7-0f8b-4544-bbeb-313ce7fb0ed9")
 		)
@@ -20193,7 +20289,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20232,6 +20328,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-000061260968")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -20423,7 +20520,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 69 "Net-(R401-Pad1)")
+			(net 69 "Net-(U106A--)")
 			(pintype "passive")
 			(uuid "26e2058e-6c29-4bdb-a095-208e9c34c307")
 		)
@@ -20467,7 +20564,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20506,6 +20603,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2c05")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -20741,7 +20839,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20780,6 +20878,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2c17")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -20961,7 +21060,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 69 "Net-(R401-Pad1)")
+			(net 69 "Net-(U106A--)")
 			(pintype "passive")
 			(uuid "e8c0a66d-706d-4af6-b694-467b146af096")
 		)
@@ -21015,7 +21114,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21054,6 +21153,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-000061260969")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -21289,7 +21389,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21328,6 +21428,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-00006108e073")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -21519,7 +21620,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 72 "Net-(R406-Pad2)")
+			(net 72 "Net-(U106A-+)")
 			(pintype "passive")
 			(uuid "0da57f90-3f5d-487e-9712-18054eebcfdf")
 		)
@@ -21563,7 +21664,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21602,6 +21703,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-000061085068")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -21793,7 +21895,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 73 "Net-(R407-Pad2)")
+			(net 73 "Net-(U106B-+)")
 			(pintype "passive")
 			(uuid "4e0027c2-8401-4f35-b4eb-8b1069a45576")
 		)
@@ -21837,7 +21939,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21876,6 +21978,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-000061085ff8")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -22067,7 +22170,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 74 "Net-(R408-Pad2)")
+			(net 74 "Net-(U106C-+)")
 			(pintype "passive")
 			(uuid "e8c702ef-02e2-4a3a-b217-7f70f23f3a17")
 		)
@@ -22111,7 +22214,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22150,6 +22253,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2bc2")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -22331,7 +22435,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 69 "Net-(R401-Pad1)")
+			(net 69 "Net-(U106A--)")
 			(pintype "passive")
 			(uuid "7d4e775b-7f36-4b3e-9ef6-9750690db9ee")
 		)
@@ -22374,7 +22478,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100R"
 			(at 5.43 0.01 0)
 			(layer "F.SilkS")
 			(uuid "ed081ed4-2a8a-4992-89df-882cdee096e7")
@@ -22385,7 +22489,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22424,6 +22528,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2b78")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -22659,7 +22764,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22698,6 +22803,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2bbc")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -22879,7 +22985,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 77 "Net-(R411-Pad1)")
+			(net 77 "Net-(U106D--)")
 			(pintype "passive")
 			(uuid "714663af-9b3c-421c-b533-dcfa59c5bd95")
 		)
@@ -22933,7 +23039,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22972,6 +23078,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-00006108fcf1")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -23163,7 +23270,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 78 "Net-(R412-Pad2)")
+			(net 78 "Net-(U106D-+)")
 			(pintype "passive")
 			(uuid "c0c10c2e-c84e-487f-879e-16df21f1638c")
 		)
@@ -23207,7 +23314,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23246,7 +23353,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-00006097ca04")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -23483,7 +23592,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23522,7 +23631,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-0000611cd998")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -23759,7 +23870,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23798,7 +23909,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-00006121ed00")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -24035,7 +24148,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24074,6 +24187,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0db3")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -24256,7 +24370,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 34 "Net-(C201-Pad2)")
+			(net 34 "Net-(U104C--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "cb633f55-8f01-4eca-9427-d6f824e78a7f")
@@ -24267,7 +24381,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 34 "Net-(C201-Pad2)")
+			(net 34 "Net-(U104C--)")
 			(pinfunction "3")
 			(pintype "passive")
 			(uuid "6c110765-012b-4396-89a4-e16d4bac9853")
@@ -24289,7 +24403,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 35 "Net-(C202-Pad2)")
+			(net 35 "Net-(U104B--)")
 			(pinfunction "5")
 			(pintype "passive")
 			(uuid "4462ce00-99ef-426d-8c9c-ecff75c4019f")
@@ -24300,7 +24414,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 35 "Net-(C202-Pad2)")
+			(net 35 "Net-(U104B--)")
 			(pinfunction "6")
 			(pintype "passive")
 			(uuid "cd430da4-9c78-4023-8586-f29682fc6c1a")
@@ -24345,7 +24459,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24384,6 +24498,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608a0dd0")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -24555,7 +24670,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 57 "Net-(R211-Pad1)")
+			(net 57 "Net-(U104D--)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "2594972b-8817-4e50-8e36-3d5f0ba441f4")
@@ -24566,7 +24681,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 57 "Net-(R211-Pad1)")
+			(net 57 "Net-(U104D--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "2425e19c-c6b9-4261-837c-5ffd9f1781ac")
@@ -24622,7 +24737,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24661,6 +24776,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-000061260964")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -24843,7 +24959,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 36 "Net-(C301-Pad2)")
+			(net 36 "Net-(U105C--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "952d9be7-aec9-45ff-ae7c-a109a6a3985f")
@@ -24854,7 +24970,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 36 "Net-(C301-Pad2)")
+			(net 36 "Net-(U105C--)")
 			(pinfunction "3")
 			(pintype "passive")
 			(uuid "89c0ac73-5d76-4881-977e-0750aacd5fed")
@@ -24876,7 +24992,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 37 "Net-(C302-Pad2)")
+			(net 37 "Net-(U105B--)")
 			(pinfunction "5")
 			(pintype "passive")
 			(uuid "b4320528-270f-4337-ab31-592367be0129")
@@ -24887,7 +25003,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 37 "Net-(C302-Pad2)")
+			(net 37 "Net-(U105B--)")
 			(pinfunction "6")
 			(pintype "passive")
 			(uuid "df0b7e49-d24f-4d3c-97ff-0dabf5fa760a")
@@ -24932,7 +25048,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24971,6 +25087,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-0000608b2c0d")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -25142,7 +25259,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 67 "Net-(R311-Pad1)")
+			(net 67 "Net-(U105D--)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "d31de2b3-69fc-4d38-b608-355afe6024a0")
@@ -25153,7 +25270,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 67 "Net-(R311-Pad1)")
+			(net 67 "Net-(U105D--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "e31eb8fa-f8c6-44bc-9e89-a65ea96e3d8c")
@@ -25209,7 +25326,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25248,6 +25365,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-0000608b2bf0")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -25430,7 +25548,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 38 "Net-(C401-Pad2)")
+			(net 38 "Net-(U106C--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "79cef297-5f5c-4aed-85ad-5ce85ef95dac")
@@ -25441,7 +25559,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 38 "Net-(C401-Pad2)")
+			(net 38 "Net-(U106C--)")
 			(pinfunction "3")
 			(pintype "passive")
 			(uuid "293c1723-4f60-4450-b3a1-b03e0fad0430")
@@ -25463,7 +25581,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 39 "Net-(C402-Pad2)")
+			(net 39 "Net-(U106B--)")
 			(pinfunction "5")
 			(pintype "passive")
 			(uuid "3f86e983-0bc0-4892-bc73-5f525973f36d")
@@ -25474,7 +25592,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 39 "Net-(C402-Pad2)")
+			(net 39 "Net-(U106B--)")
 			(pinfunction "6")
 			(pintype "passive")
 			(uuid "54e841d1-16eb-42e9-a9f6-d86be6977c7e")
@@ -25519,7 +25637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25558,6 +25676,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-000061260966")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -25729,7 +25848,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 77 "Net-(R411-Pad1)")
+			(net 77 "Net-(U106D--)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "5465e08b-fd8a-407f-9d06-42e1ec70db37")
@@ -25740,7 +25859,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 77 "Net-(R411-Pad1)")
+			(net 77 "Net-(U106D--)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "10cad750-aa27-4df2-89d3-33b5bc7c99f0")
@@ -25796,7 +25915,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25835,6 +25954,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SW* SP3T*")
 		(path "/00000000-0000-0000-0000-000060877f6e/00000000-0000-0000-0000-0000608d201c")
 		(sheetname "filter1")
 		(sheetfile "filter1.kicad_sch")
@@ -26084,7 +26204,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26123,6 +26243,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SW* SP3T*")
 		(path "/00000000-0000-0000-0000-0000608a2b11/00000000-0000-0000-0000-0000608b838e")
 		(sheetname "filter2")
 		(sheetfile "filter2.kicad_sch")
@@ -26372,7 +26493,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26411,6 +26532,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SW* SP3T*")
 		(path "/00000000-0000-0000-0000-0000608d9ead/00000000-0000-0000-0000-00006126096a")
 		(sheetname "filter3")
 		(sheetfile "filter3.kicad_sch")
@@ -26660,7 +26782,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26673,7 +26795,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -26699,7 +26821,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/00000000-0000-0000-0000-00006125692d")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -26891,7 +27015,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(C102-Pad2)")
+			(net 20 "Net-(U101A-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "2bfef441-3846-47d7-b9c0-bb1b7e4e33fa")
@@ -26913,7 +27037,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(C101-Pad2)")
+			(net 19 "Net-(D101-K)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "5aa22c3e-c36a-4ab4-a4bb-dbcc80127a5e")
@@ -26924,7 +27048,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 43 "Net-(R101-Pad1)")
+			(net 43 "Net-(U101B--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "2f3810ad-cbd9-43cd-ac23-87fc3f200c84")
@@ -26990,7 +27114,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27003,7 +27127,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27029,7 +27153,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/00000000-0000-0000-0000-0000611cd90d")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -27221,7 +27347,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 26 "Net-(C106-Pad2)")
+			(net 26 "Net-(U102A-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "552ddc63-fa2e-4010-9adb-ad33bf398815")
@@ -27243,7 +27369,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "Net-(C105-Pad2)")
+			(net 24 "Net-(D103-K)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "cc49941f-6aa7-4b6c-8813-affd644d438b")
@@ -27254,7 +27380,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 45 "Net-(R109-Pad1)")
+			(net 45 "Net-(U102B--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "093bbf39-159c-46fb-af2a-d1101e660af5")
@@ -27320,7 +27446,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27333,7 +27459,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27359,7 +27485,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/00000000-0000-0000-0000-00006132f500")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -27551,7 +27679,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 31 "Net-(C110-Pad2)")
+			(net 31 "Net-(U103A-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "a271b19d-b853-4ab5-8c5d-f40207cbe70f")
@@ -27573,7 +27701,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 29 "Net-(C109-Pad2)")
+			(net 29 "Net-(D105-K)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "972258e3-c720-4bab-9a68-fe3edebf4c4a")
@@ -27584,7 +27712,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 47 "Net-(R117-Pad1)")
+			(net 47 "Net-(U103B--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "b5df9f91-92ee-4eac-be1a-c41ce986eaf0")
@@ -27650,7 +27778,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27663,7 +27791,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27689,7 +27817,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/00000000-0000-0000-0000-0000606fb8bf")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -27870,7 +28000,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 49 "Net-(R201-Pad1)")
+			(net 49 "Net-(U104A--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "9a34b2bd-0a56-464f-9832-ab2e24db722f")
@@ -27881,7 +28011,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 52 "Net-(R206-Pad2)")
+			(net 52 "Net-(U104A-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "45d39537-2593-4e56-97e8-108f93c768ba")
@@ -27903,7 +28033,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 53 "Net-(R207-Pad2)")
+			(net 53 "Net-(U104B-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "c026ed1c-6476-4d39-8b37-7984c91da6a0")
@@ -27914,7 +28044,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 35 "Net-(C202-Pad2)")
+			(net 35 "Net-(U104B--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "4e23eb4c-5953-4234-a5b3-8527d415033d")
@@ -27945,7 +28075,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 34 "Net-(C201-Pad2)")
+			(net 34 "Net-(U104C--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "a2d90f5b-b80b-45a6-9311-a5b8e48af5f5")
@@ -27956,7 +28086,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 54 "Net-(R208-Pad2)")
+			(net 54 "Net-(U104C-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "7291d149-189e-41d6-a858-e92a6daeec12")
@@ -27978,7 +28108,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 58 "Net-(R212-Pad2)")
+			(net 58 "Net-(U104D-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "7c24c2c1-e25e-48ac-bc9c-6a7008ce6a1a")
@@ -27989,7 +28119,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 57 "Net-(R211-Pad1)")
+			(net 57 "Net-(U104D--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "6608c0f0-f63b-48d5-822c-21112eb1c862")
@@ -28044,7 +28174,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28057,7 +28187,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28083,7 +28213,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/00000000-0000-0000-0000-000060869bf4")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -28264,7 +28396,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 59 "Net-(R301-Pad1)")
+			(net 59 "Net-(U105A--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "371171b4-5cbd-4ff6-8de6-1770b3625bf7")
@@ -28275,7 +28407,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 62 "Net-(R306-Pad2)")
+			(net 62 "Net-(U105A-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "9e0e1197-61f0-45f2-8a8d-21c759b69f1f")
@@ -28297,7 +28429,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 63 "Net-(R307-Pad2)")
+			(net 63 "Net-(U105B-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "5ed4b195-ad58-4ac2-8cd9-03b1af27a5ff")
@@ -28308,7 +28440,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 37 "Net-(C302-Pad2)")
+			(net 37 "Net-(U105B--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "6253d143-b6f3-4f86-9322-92b02efefb0b")
@@ -28339,7 +28471,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 36 "Net-(C301-Pad2)")
+			(net 36 "Net-(U105C--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "243ebb69-1975-494f-ae9b-b07c545bae18")
@@ -28350,7 +28482,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 64 "Net-(R308-Pad2)")
+			(net 64 "Net-(U105C-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "f64cbd84-1860-4220-8513-e75b912a3f76")
@@ -28372,7 +28504,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 68 "Net-(R312-Pad2)")
+			(net 68 "Net-(U105D-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "def7312d-467b-47a4-8f26-839db50bd5fa")
@@ -28383,7 +28515,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 67 "Net-(R311-Pad1)")
+			(net 67 "Net-(U105D--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "1986ae6d-9aaa-4d93-9c8a-b7f1094434aa")
@@ -28438,7 +28570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28451,7 +28583,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28477,7 +28609,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*")
 		(path "/00000000-0000-0000-0000-0000608e6be0")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -28658,7 +28792,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 69 "Net-(R401-Pad1)")
+			(net 69 "Net-(U106A--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "8aabad5a-2baf-423a-9424-d01328fe1564")
@@ -28669,7 +28803,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 72 "Net-(R406-Pad2)")
+			(net 72 "Net-(U106A-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "395694eb-fe23-4c40-95fb-758509a1c81b")
@@ -28691,7 +28825,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 73 "Net-(R407-Pad2)")
+			(net 73 "Net-(U106B-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "78a5ecd3-bf84-43a0-b3a0-a45bae741b90")
@@ -28702,7 +28836,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 39 "Net-(C402-Pad2)")
+			(net 39 "Net-(U106B--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "e17942a6-8b48-4c2b-9818-92db8d3ef2a8")
@@ -28733,7 +28867,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 38 "Net-(C401-Pad2)")
+			(net 38 "Net-(U106C--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "ee082207-0ff0-498d-b2f0-2a1294752d90")
@@ -28744,7 +28878,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 74 "Net-(R408-Pad2)")
+			(net 74 "Net-(U106C-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "075a9c65-b79b-43c9-a91b-36001cfd614f")
@@ -28766,7 +28900,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 78 "Net-(R412-Pad2)")
+			(net 78 "Net-(U106D-+)")
 			(pinfunction "+")
 			(pintype "input")
 			(uuid "72806553-71e6-4049-a4e3-3865bb29c892")
@@ -28777,7 +28911,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 77 "Net-(R411-Pad1)")
+			(net 77 "Net-(U106D--)")
 			(pinfunction "-")
 			(pintype "input")
 			(uuid "9b11e23d-63f5-4ecb-9166-0077ebfc2331")
@@ -28832,7 +28966,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28871,7 +29005,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000614ee90b")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -29061,7 +29197,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "Net-(C101-Pad2)")
+			(net 19 "Net-(D101-K)")
 			(pintype "passive")
 			(uuid "8e447b01-4f5a-449c-bd75-ee5f386ac97b")
 		)
@@ -29105,7 +29241,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29144,7 +29280,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00006148cb36")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -29334,7 +29472,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "Net-(C105-Pad2)")
+			(net 24 "Net-(D103-K)")
 			(pintype "passive")
 			(uuid "d55f8735-a1fb-49c8-aca2-933990fbb9aa")
 		)
@@ -29378,7 +29516,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29417,7 +29555,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000061454b2e")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -29607,7 +29747,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 29 "Net-(C109-Pad2)")
+			(net 29 "Net-(D105-K)")
 			(pintype "passive")
 			(uuid "f9f2d961-a12b-440e-b46f-45f088fbddf9")
 		)
@@ -29651,7 +29791,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29690,7 +29830,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000610564f2")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -29870,7 +30012,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 43 "Net-(R101-Pad1)")
+			(net 43 "Net-(U101B--)")
 			(pintype "passive")
 			(uuid "4dc9981f-4bdd-439c-ac29-446b43726a21")
 		)
@@ -29924,7 +30066,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29963,7 +30105,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000610564e7")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -30153,7 +30297,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 43 "Net-(R101-Pad1)")
+			(net 43 "Net-(U101B--)")
 			(pintype "passive")
 			(uuid "bcca31d9-ccef-4f94-bbb6-2eac6b49a1d1")
 		)
@@ -30197,7 +30341,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30236,7 +30380,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000610338b3")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -30416,7 +30562,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 45 "Net-(R109-Pad1)")
+			(net 45 "Net-(U102B--)")
 			(pintype "passive")
 			(uuid "4ee3af80-c44b-4ae2-9b0e-ffe23a95e442")
 		)
@@ -30470,7 +30616,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30509,7 +30655,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-0000610338a8")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -30699,7 +30847,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 45 "Net-(R109-Pad1)")
+			(net 45 "Net-(U102B--)")
 			(pintype "passive")
 			(uuid "5cc790ee-385b-45d7-b21d-94688c16ff58")
 		)
@@ -30743,7 +30891,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30782,7 +30930,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000061008069")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -30972,7 +31122,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 47 "Net-(R117-Pad1)")
+			(net 47 "Net-(U103B--)")
 			(pintype "passive")
 			(uuid "5623b7f8-0cfd-426d-91ee-d787e5917a94")
 		)
@@ -31016,7 +31166,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31055,7 +31205,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00006121ec87")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -31245,7 +31397,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 31 "Net-(C110-Pad2)")
+			(net 31 "Net-(U103A-+)")
 			(pintype "passive")
 			(uuid "84095f5e-5c5f-4ae7-af9b-9f52d1e14c52")
 		)
@@ -31289,7 +31441,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31328,7 +31480,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00006101857d")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -31518,7 +31672,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(C102-Pad2)")
+			(net 20 "Net-(U101A-+)")
 			(pintype "passive")
 			(uuid "149a21ef-cedf-439c-ab30-94027171f3ee")
 		)
@@ -31562,7 +31716,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31601,7 +31755,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00006107f651")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -31835,7 +31991,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31874,7 +32030,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000611cd94c")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -32064,7 +32222,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 26 "Net-(C106-Pad2)")
+			(net 26 "Net-(U102A-+)")
 			(pintype "passive")
 			(uuid "c0948723-4c19-4dd4-86fe-94ce0c0fd5c2")
 		)
@@ -32108,7 +32266,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32147,7 +32305,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-0000611cd9ea")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -32381,7 +32541,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32420,7 +32580,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00006121ecb4")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -32610,7 +32772,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 31 "Net-(C110-Pad2)")
+			(net 31 "Net-(U103A-+)")
 			(pintype "passive")
 			(uuid "bf9460e5-04dc-42bf-a95b-025839edb7d6")
 		)
@@ -32654,7 +32816,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L22.0mm_D10.5mm_P27.50mm_Horizontal"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32693,7 +32855,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00006121ed52")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -32927,7 +33091,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32966,7 +33130,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jack*")
 		(path "/00000000-0000-0000-0000-0000608e97a3")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -33297,7 +33463,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33336,7 +33502,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jack*")
 		(path "/00000000-0000-0000-0000-000060fedb66")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -33667,7 +33835,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33706,7 +33874,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jack*")
 		(path "/00000000-0000-0000-0000-0000611cd8f7")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -34037,7 +34207,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34076,7 +34246,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jack*")
 		(path "/00000000-0000-0000-0000-0000611cd9d3")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -34407,7 +34579,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34446,7 +34618,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jack*")
 		(path "/00000000-0000-0000-0000-00006121ec5f")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -34777,7 +34951,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NJ2FD-V_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34816,7 +34990,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jack*")
 		(path "/00000000-0000-0000-0000-00006121ed3b")
+		(sheetname "Root")
 		(sheetfile "The_Ping_Ting.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -36921,7 +37097,7 @@
 			)
 		)
 	)
-	(gr_text "Kromftronics // THE PING TING rev1.1"
+	(gr_text "Kromftronics // THE PING TING rev1.2\n"
 		(at 147.616 71.858 0)
 		(layer "F.SilkS")
 		(uuid "58758b50-0c83-4b5d-8c1e-16f07e39eaa3")
@@ -37073,13 +37249,13 @@
 		)
 		(height 3.058042)
 		(gr_text "150.0300 mm"
-			(at 20.879958 95.377508 270.0152758)
+			(at 16.764 95.377058 270.0152758)
 			(layer "Eco2.User")
 			(uuid "1ee5318d-ea14-4aea-bfde-db5c9f79a7dc")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 2.54 2.54)
+					(thickness 0.3)
 				)
 			)
 		)
@@ -37093,7 +37269,7 @@
 		(style
 			(thickness 0.1)
 			(arrow_length 1.27)
-			(text_position_mode 0)
+			(text_position_mode 2)
 			(extension_height 0.58642)
 			(extension_offset 0.5) keep_text_aligned)
 	)
@@ -37106,13 +37282,13 @@
 		)
 		(height -0.873987)
 		(gr_text "150.0100 mm"
-			(at 97.773135 18.343013 359.9961805)
+			(at 97.773247 16.653013 359.9961805)
 			(layer "Eco2.User")
 			(uuid "6a2a3a08-c83a-4237-9e4a-3899218fd1a6")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 2.54 2.54)
+					(thickness 0.3)
 				)
 			)
 		)

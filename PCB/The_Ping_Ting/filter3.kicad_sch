@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "6ee6801b-cb92-4e93-9492-2b094a20342a")
 	(paper "A4")
+	(title_block
+		(title "Low Frequency Filter")
+		(date "2024-09-07")
+		(rev "1.2")
+		(company "Kromftronics")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM324"
 			(pin_names
@@ -2568,7 +2574,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100R"
 			(at 114.3 111.3536 90)
 			(effects
 				(font

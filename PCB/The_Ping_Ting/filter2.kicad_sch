@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "a7a64905-1cdb-4e56-8a25-dbf34dc3640e")
 	(paper "A4")
+	(title_block
+		(title "Mid Frequency Filter")
+		(date "2024-09-07")
+		(rev "1.2")
+		(company "Kromftronics")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM324"
 			(pin_names
@@ -3222,7 +3228,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "220R"
 			(at 114.3 111.3536 90)
 			(effects
 				(font

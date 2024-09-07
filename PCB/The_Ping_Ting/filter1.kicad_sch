@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "c65dfd06-f033-4016-8afd-b3037aba17a7")
 	(paper "A4")
+	(title_block
+		(title "High Frequency Filter")
+		(date "2024-09-07")
+		(rev "1.2")
+		(company "Kromftronics")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LM324"
 			(pin_names
@@ -2672,7 +2678,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "220R"
 			(at 109.22 106.2736 90)
 			(effects
 				(font

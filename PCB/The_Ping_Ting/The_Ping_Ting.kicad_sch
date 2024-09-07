@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "The Ping Ting")
-		(date "2023-08-30")
-		(rev "1.1")
+		(date "2024-09-07")
+		(rev "1.2")
 		(company "Kromftronics")
 	)
 	(lib_symbols
